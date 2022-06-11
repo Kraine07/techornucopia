@@ -1,0 +1,82 @@
+
+/* REUSABLE CSS */
+.input-style{
+    width: 300px;
+    border: 1px solid #112B3C;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+/* CONTACT US PAGE STYLES */
+.contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 8px #112B3C55
+}
+.contact-us>*{
+    margin: 0 12px;
+    /* border: 1px solid red; */
+}
+
+.contact-us-img img{
+    object-fit: cover;
+    padding: 24px 0;
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    filter: grayscale(70%);
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color:#112B3C;
+}
+
+.contact i{
+    color: #112B3C;
+    text-align: right;
+    font-weight: 900;
+}
+.contact p{
+    line-height: 1.1;
+}
+
+form{
+    margin: 24px auto;
+    text-align: right;
+}
+form>*{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+    margin: 16px auto;
+}
+form>legend{
+    display: block;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+form textarea{
+    resize: none;
+    height: 150px;
+}
+form>button{
+    display: block;
+    padding: 8px 32px;
+    text-align: center;
+    font-weight: 700;
+    float: right;
+    width: 25%;
+}
+form>button:hover{
+    box-shadow: 0 0 4px #112B3Caa;
+}
