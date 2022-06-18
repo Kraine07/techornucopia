@@ -1,74 +1,102 @@
 
 /* REUSABLE CSS */
 .input-style{
-    width: 300px;
-    border: 1px solid #112B3C;
+    width: 280px;
+    border: none;
     border-radius: 4px;
     padding: 4px 8px;
 }
 
 /* CONTACT US PAGE STYLES */
 .contact-us{
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    padding: 20px 60px;
-    background-color:#2053752f;
-    box-shadow: 0 0 12px #112B3CC5;
-}
-.contact-us>*{
-    padding: 0 12px;
+    position: relative;
+    background-color: #112B3C;
+    box-shadow: 0 0 12px #112B3CCC;
+    margin: 40px auto;
 }
 
+.contact-us::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/background.png");
+    opacity: 0.6;
+}
+.contact-us *{
+    z-index: 0;
+}
+.contact-us>h2{
+    background-color:#205375;
+    border-bottom:4px double #ffffff;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    padding: 20px 0;
+    margin-bottom: 12px;
+    position: relative;
+}
+.form-container{
+    padding: 0 80px;
+}
 .contact-us-img img{
     object-fit: contain;
-    width: 480px;
+    width: 300px;
     height: auto;
-    margin: 0 auto;
+    text-align: center;
 }
-.right-side{
-    justify-content: space-evenly;
-}
+
 .contact{
-    display: flex;
-    justify-content:space-evenly ;
-    align-items: flex-start;
+    position: relative;
+    justify-content: flex-end;
+    align-items:flex-start;
     margin-top: 16px;
     font-size: 18px;
     font-weight: 600;
-    color:#112B3C;
+    color: #ffffff;
+    background-color:#205375
+}
+.contact>h3{
+    align-self: center;
+    word-spacing: 2px;
+}
+.contact>i{
+    align-self:center;
+    margin: 0 128px 0 20px;
+    font-size: 30px;
 }
 
-.contact i{
-    color: #112B3C;
+.contact-info{
+    margin: 12px 80px;
+}
+
+.contact-info>i{
     text-align: right;
     margin-bottom: 8px;
     font-size: 10px;
 }
 .contact p{
 
-    line-height: 1;
+    line-height: 16px;
     font-weight: 300;
     font-size: 14px;
 }
-.telephone{
-    /* align-self:flex-end; */
+.contact-info{
+    margin: 12px 40px;
 }
 .contact-form{
     margin: 24px auto;
     text-align: right;
+    color:#ffffff;
+    font-weight: 600;
 }
 .contact-form>*{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 16px;
     margin: 16px auto;
-}
-.contact-form>legend{
-    display: block;
-    font-weight: 700;
-    font-size: 32px;
-    margin-bottom: 40px;
 }
 
 
@@ -78,17 +106,17 @@
 }
 .contact-form>button{
     display: block;
-    width: 300px;
+    width: 280px;
     padding: 4px;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
     float: right;
     background-color: #F66B0E;
-    color:#112B3C;
+    color:#ffffff;
     /* border:1px solid #112B3C; */
     border-radius: 4px
 }
 .contact-form>button:hover{
-    box-shadow: 0 0 4px #112B3Caa;
+    transform: scale(1.1);
 }

@@ -15,7 +15,7 @@
     <title>Techcornucopia</title>
 </head>
 <body>
-
+    <div class="container">
         <!-- NAV BAR -->
         <nav>
             <div class="nav-upper content-width flex-row">
@@ -55,26 +55,34 @@
         </nav>
 
 
-        <!-- WELCOME -->
+
+    
+            <!-- WELCOME -->
         <div class="welcome content-width">
-            <img src="/img/options/laptop.png" alt="computer_image">
-            <h1>Get PCs</h1>
-            <p>Laptop or Desktop for work, study or play! Get the PC of your choice or build your own.</p>
+                <img src="/img/laptop.png" alt="computer_image">
+            <div class="info flex-col">
+                <h1>Computer</h1>
+                <p>Laptop or Desktop for work, study or play! Get the PC of your choice or build your own.</p>
             <a href="">SHOP COMPUTERS</a>
+            </div>
         </div>
 
-        <div class="welcome content-width">
+        <div class="welcome content-width flex-row">
             <img src="/img/kisspng-iphone-4s-deepak-mobiles-shopping-computer-softwar-smartphone-5ab7443ee255a4.5213842515219599989271.png" alt="mobiles_image">
-            <h1>Connect</h1>
-            <p>Check out our wide range of mobile devices. We stock all your favorite brands.</p>
+            <div class="info flex-col">
+                <h1>Mobile</h1>
+                <p>Check out our wide range of mobile devices. We stock all your favorite brands.</p>
             <a href="">SHOP MOBILES</a>
+            </div>
         </div>
 
-        <div class="welcome content-width">
-            <img src="/img/accessories.png" alt="repairs_image">
-            <h1>Accessories and more.</h1>
-            <p>Come and get all the latest computer and mobile accessories. </p>
+        <div class="welcome content-width flex-row">
+            <img src="/img/accessories.png" alt="accessories_image">
+            <div class="info flex-col">
+                <h1>Accessories</h1>
+                <p>Come and get all the latest computer and mobile accessories. </p>
             <a href="/pages/contact.html">SHOP ACCESSORIES</a>
+            </div>
         </div>
 
 
@@ -117,9 +125,9 @@
 
 
         <!-- PRODUCT OPTIONS -->
-        <div class="product_options" id="products">
+        <div class="product-options" id="products">
             <h2 class="content-width head-space"><i class="fa-solid fa-layer-group"></i> Categories</h2>
-            <div class="options_cntr four-col-grid content-width">
+            <div class="options-container four-col-grid content-width">
                 <div class="option flex-col">
                     <img src="/img/options/computer-gad2f903dc_1280.png" alt="">
                     <h3>PC</h3>
@@ -158,7 +166,7 @@
 
 
             <!-- REPAIRS -->
-            <div class="repairs-cntr">
+            <div class="repairs-container">
                 <div class="repairs content-width flex-row">
                     <div class="repair-img">
                         <img src="/img/kisspng-captain-repair-troyes-rparation-iphone-ipad-et-broken-phone-5b3cb7837b52b7.2314206815307057955051.png" alt="broken-phone">
@@ -166,7 +174,7 @@
                     <div class="repair-text">
                         <h2>Need Repairs?</h2>
                         <p> Our qualified and experienced technicians are ready to assist you.</p>
-                        <button>CONTACT US</button>
+                        <a href="/pages/contact.html">CONTACT US</a>
                     </div>
                 </div>
             </div>
@@ -175,15 +183,15 @@
 
         <!-- FOOTER -->
         <footer>
-            <div class="content-width footer-cntr three-col-grid">
+            <div class="content-width footer-container three-col-grid">
                 <div class="footer-item flex-col">
                     <h3>SITE LINKS</h3>
-                    <a>Home</a>
-                    <a>Products</a>
-                    <a>Contact Us</a>
-                    <a>Account</a>
-                    <a>Terms and Conditions</a>
-                    <a>Privacy Policy</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/index.html#products">Products</a>
+                    <a href="/pages/contact.html">Contact Us</a>
+                    <a href="/pages/login.html">Account</a>
+                    <a href="/pages/404.html">Terms and Conditions</a>
+                    <a href="/pages/404.html">Privacy Policy</a>
                 </div>
                 <div class="footer-item flex-col">
                     <img src="/img/logo.png" alt="logo">
@@ -218,7 +226,7 @@
             </div>
             <p>Copyright Techornucopia &copy; 2022. All rights reserved.</p>
         </footer>
-
-    <script src="/jscript/script.jS"></script>
+    </div>
+    <script src="/js/script.jS"></script>
 </body>
 </html>

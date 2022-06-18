@@ -12,6 +12,9 @@
     <title>Techcornucopia | Contact Us</title>
 </head>
 <body>
+
+
+    <div class="container">
         <nav>
             <div class="nav-upper content-width flex-row">
                 <a href="/index.html">
@@ -51,64 +54,65 @@
 
 
 
-
         <!--  -->
-        <div class="contact-us content-width">
-            <div class="right-side flex-col">
-                <div class="contact-us-img">
-                    <img src="/img/help-ga2ade2013_640.png" alt="contact-us-image">
+            <div class="contact-us content-width">
+                <h2>Leave your message below.</h2>
+                <div class="form-container flex-row">
+                    <div class="contact-us-img">
+                        <img src="/img/help-ga2ade2013_640.png" alt="contact-us-image">
+                    </div>
+                    <form action="" class="contact-form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input class="input-style" type="text" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input class="input-style" type="email" placeholder="john@email.com" required>
+                        </div>
+                        <div>
+                            <label for="telephone">Telephone</label>
+                            <input class="input-style" type="telephone" placeholder="999 999 9999">
+                        </div>
+                        <div>
+                            <label for="name">Message</label>
+                            <textarea class="input-style"  required></textarea>
+                        </div>
+                        <button>Send</button>
+                    </form>
                 </div>
-                <div class="contact">
-                    <div class="address">
+                <div class="contact flex-row">
+                    <h3>We are here to serve you</h3>
+                    <i class="fa-solid fa-handshake-simple"></i>
+                    <div class="contact-info">
                         <i class="fa-solid fa-location-dot"> Location</i>
                         <p>Shop 12</p>
                         <p>Ocean View Plaza</p>
                         <p>Montego Bay</p>
                     </div>
-                    <div class="telephone">
-                        <i class="fa-solid fa-phone"> Tel</i>
+                    <div class="contact-info">
+                        <i class="fa-solid fa-phone"> Phone</i>
                         <p>876-999-0000</p>
                         <p>876-999-9999</p>
                     </div>
                 </div>
             </div>
-
-            <form action="" class="contact-form">
-                <legend>Leave your message below.</legend>
-                <div>
-                    <label for="name">Name</label>
-                    <input class="input-style" type="text" placeholder="John Doe" required>
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input class="input-style" type="email" placeholder="john@email.com" required>
-                </div>
-                <div>
-                    <label for="telephone">Telephone</label>
-                    <input class="input-style" type="telephone" placeholder="999 999 9999">
-                </div>
-                <div>
-                    <label for="name">Message</label>
-                    <textarea class="input-style"  required></textarea>
-                </div>
-                <button>Send</button>
-            </form>
-        </div>
+        
 
 
 
 
         <!-- FOOTER -->
         <footer>
-            <div class="content-width footer-cntr three-col-grid">
+            <div class="content-width footer-container three-col-grid">
                 <div class="footer-item flex-col">
                     <h3>SITE LINKS</h3>
-                    <a>Home</a>
-                    <a>Products</a>
-                    <a>Contact Us</a>
-                    <a>Account</a>
-                    <a>Terms and Conditions</a>
-                    <a>Privacy Policy</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/index.html#products">Products</a>
+                    <a href="/pages/contact.html">Contact Us</a>
+                    <a href="/pages/login.html">Account</a>
+                    <a href="/pages/404.html">Terms and Conditions</a>
+                    <a href="/pages/404.html">Privacy Policy</a>
                 </div>
                 <div class="footer-item flex-col">
                     <img src="/img/logo.png" alt="logo">
@@ -143,5 +147,6 @@
             </div>
             <p>Copyright Techornucopia &copy; 2022. All rights reserved.</p>
         </footer>
+    </div>
 </body>
 </html>
