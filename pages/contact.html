@@ -12,21 +12,40 @@
     <title>Techcornucopia | Contact Us</title>
 </head>
 <body>
-    <div class="container">
         <nav>
-            <div class="nav">
+            <div class="nav-upper content-width flex-row">
                 <a href="/index.html">
-                    <img src="/img/logo.png" alt="logo-img">
+                    <img src="/img/logo.png" alt="site-logo">
                 </a>
-                <ul>
-                    <li><a href="/index.html#products">Products</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="/pages/contact.html" active>Contact Us</a></li>
-                    <li class="account">
-                        <a>Login</a>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </li>
-                </ul>
+                <a href="/pages/login.html">
+                    <i class="fa-solid fa-cart-shopping"><sup> 0</sup></i>
+                </a>
+            </div>
+            <div class="menu content-width flex-row">
+                <div class="search flex-row">
+                    <form action="" flex-row>
+                        <input type="text">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="menu-btns">
+                    <ul class="flex-row">
+                        <a href="/index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="/index.html#products">
+                            <li>Products</li>
+                        </a>
+                        <a href="/pages/contact.html">
+                            <li class="active">Contact Us</li>
+                        </a>
+                        <a href="/pages/login.html">
+                            <li>Account</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -35,13 +54,13 @@
 
         <!--  -->
         <div class="contact-us content-width">
-            <div>
+            <div class="right-side flex-col">
                 <div class="contact-us-img">
-                    <img src="/img/customer-service-g44adf2488_1920.jpg" alt="contact-us-image">
+                    <img src="/img/help-ga2ade2013_640.png" alt="contact-us-image">
                 </div>
                 <div class="contact">
                     <div class="address">
-                        <i class="fa-solid fa-location-dot"> address</i>
+                        <i class="fa-solid fa-location-dot"> Location</i>
                         <p>Shop 12</p>
                         <p>Ocean View Plaza</p>
                         <p>Montego Bay</p>
@@ -54,8 +73,8 @@
                 </div>
             </div>
 
-            <form action="">
-                <legend>Leave a message below</legend>
+            <form action="" class="contact-form">
+                <legend>Leave your message below.</legend>
                 <div>
                     <label for="name">Name</label>
                     <input class="input-style" type="text" placeholder="John Doe" required>
@@ -75,6 +94,54 @@
                 <button>Send</button>
             </form>
         </div>
-    </div>
+
+
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="content-width footer-cntr three-col-grid">
+                <div class="footer-item flex-col">
+                    <h3>SITE LINKS</h3>
+                    <a>Home</a>
+                    <a>Products</a>
+                    <a>Contact Us</a>
+                    <a>Account</a>
+                    <a>Terms and Conditions</a>
+                    <a>Privacy Policy</a>
+                </div>
+                <div class="footer-item flex-col">
+                    <img src="/img/logo.png" alt="logo">
+                    <p>Secured Payments</p>
+                    <div class="payment flex-row">
+                        <div class="pay-logo flex-col">
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </div>
+                        <div class="pay-logo flex-col">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </div>
+                        <div class="pay-logo flex-col">
+                            <i class="fa-brands fa-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-item flex-col sm">
+                    <h3>SOCIAL MEDIA</h3>
+                    <a class="sm-item flex-row">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Facebook</p>
+                    </a>
+                    <a class="sm-item flex-row">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>Instagram</p>
+                    </a>
+                    <a class="sm-item flex-row">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p>Twitter</p>
+                    </a>
+                </div>
+            </div>
+            <p>Copyright Techornucopia &copy; 2022. All rights reserved.</p>
+        </footer>
 </body>
 </html>

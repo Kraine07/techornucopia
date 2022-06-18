@@ -10,28 +10,29 @@
 /* CONTACT US PAGE STYLES */
 .contact-us{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    padding: 40px 20px;
-    box-shadow: 0 0 8px #112B3C55
+    padding: 20px 60px;
+    background-color:#2053752f;
+    box-shadow: 0 0 12px #112B3CC5;
 }
 .contact-us>*{
-    margin: 0 12px;
-    /* border: 1px solid red; */
+    padding: 0 12px;
 }
 
 .contact-us-img img{
-    object-fit: cover;
-    padding: 24px 0;
-    height: 300px;
-    width: 400px;
+    object-fit: contain;
+    width: 480px;
+    height: auto;
     margin: 0 auto;
-    filter: grayscale(70%);
+}
+.right-side{
+    justify-content: space-evenly;
 }
 .contact{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content:space-evenly ;
+    align-items: flex-start;
     margin-top: 16px;
     font-size: 18px;
     font-weight: 600;
@@ -41,23 +42,29 @@
 .contact i{
     color: #112B3C;
     text-align: right;
-    font-weight: 900;
+    margin-bottom: 8px;
+    font-size: 10px;
 }
 .contact p{
-    line-height: 1.1;
-}
 
-form{
+    line-height: 1;
+    font-weight: 300;
+    font-size: 14px;
+}
+.telephone{
+    /* align-self:flex-end; */
+}
+.contact-form{
     margin: 24px auto;
     text-align: right;
 }
-form>*{
+.contact-form>*{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 16px;
     margin: 16px auto;
 }
-form>legend{
+.contact-form>legend{
     display: block;
     font-weight: 700;
     font-size: 32px;
@@ -65,18 +72,23 @@ form>legend{
 }
 
 
-form textarea{
+.contact-form textarea{
     resize: none;
     height: 150px;
 }
-form>button{
+.contact-form>button{
     display: block;
-    padding: 8px 32px;
+    width: 300px;
+    padding: 4px;
     text-align: center;
+    font-size: 16px;
     font-weight: 700;
     float: right;
-    width: 25%;
+    background-color: #F66B0E;
+    color:#112B3C;
+    /* border:1px solid #112B3C; */
+    border-radius: 4px
 }
-form>button:hover{
+.contact-form>button:hover{
     box-shadow: 0 0 4px #112B3Caa;
 }

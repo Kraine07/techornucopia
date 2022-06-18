@@ -17,6 +17,10 @@
 
 
 /* REUSABLE CSS */
+.active{
+    border-bottom: 2px solid #F66B0E;
+    color:#F66B0E;
+}
 .content-width{
     width: 900px;
     margin: 0 auto;
@@ -67,18 +71,14 @@ html{
     font-family: 'Mukta', sans-serif;
 }
 body{
-    font-size: 20px;
     color:#112B3C;
 }
-
-
 button{
     cursor: pointer;
     border: none;
     background-color: #F66B0E;
     color:#ffffff;
 }
-
 img{
     max-width: 100%;
     object-fit: contain;
@@ -96,11 +96,11 @@ a:hover{
 
 nav{
     background-color: #112B3C;
-    height: 80px;
+    height: 120px;
     position: sticky;
     top: 0;
     z-index: 1;
-    border-bottom:2px solid #205375;
+    border-bottom:4px solid #205375;
 }
 
 
@@ -108,35 +108,52 @@ nav{
 
 
 /* NAV BAR */
-.nav{
-    display: flex;
+.nav-upper,
+.menu{
     justify-content: space-between;
-    line-height: 80px;
-    color: #EFEFEF;
+    color: #ffffff;
 }
-.nav>a>img{
+.nav-upper>a>img{
     width: 200px;
 }
-
-.nav>ul>li{
-    display: inline;
-}
-.nav>ul>li>a{
-    font-weight: bold;
-    color: #EFEFEF;
-    padding: 4px 12px;
+.search>form{
+    justify-content: flex-start;
 }
 
-.nav>ul>li>a:hover{
-    border-bottom: 2px solid #F66B0E;
-    border-top: 2px solid #F66B0E;
-    color:#F66B0E;
+.search input{
+    border: none;
+    outline: none;
+    padding: 8px;
+    margin: 0;
+    height: 24px;
+    border-radius: 4px 0 0 4px ;
+}
+.search button{
+    background-color:#ffffff;
+    color:#112B3C;
+    border: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 0 4px 4px 0;
+    margin-left: -2px;
 }
 
-.account>i{
-    color:#ffffff;
-    cursor: pointer;
+.menu-btns li{
+    list-style: none;
 }
+.menu-btns a{
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 3px solid #112B3C;
+    letter-spacing: 1px;
+}
+.menu-btns a:hover{
+    border-bottom: 2px solid #F66B0E;;
+}
+
+
+
 
 
 
@@ -149,7 +166,7 @@ nav{
 .welcome>img{
     float: left;
     width: auto;
-    height: 60%;
+    height: 70%;
     margin: 0 32px 0 0;
 }
 .welcome>h1{
@@ -161,17 +178,15 @@ nav{
     line-height: 1.05;
 }
 .welcome>a{
-    padding: 12px 24px;
+    padding: 4px 32px;
     font-size: 20px;
     font-weight: 600;
     background-color: #F66B0E;
     color:#FFFFFF;
 }
 .welcome>a:hover{
-    box-shadow: 0 0 4px #112B3CC0;
-    transform: scale(1.1);
+    box-shadow: 0 0 8px #112B3CC0;
 }
-
 
 
 
@@ -191,9 +206,11 @@ nav{
 .highlight{
     cursor: pointer;
     color:#112B3C;
+    font-weight: 500;
     transition-duration: 0.2s;
     padding: 0 18px;
     margin: 0 0 12px 0;
+    height: 260px;
 }
 .highlight:hover{
     box-shadow: 0 0 4px #112B3CC0;
@@ -248,7 +265,7 @@ nav{
 
 /* CATEGORIES */
 .product_options{
-    margin: 80px 0;
+    padding-top: 96px;
 }
 .options_cntr{
     gap: 48px;
@@ -259,7 +276,6 @@ nav{
     cursor: pointer;
 }
 .option:hover{
-    /* border: 1px solid #112B3C; */
     transform: scale(1.05);
 }
 .option:hover.option>h3{
@@ -277,7 +293,6 @@ nav{
     transition-duration: 0.4s;
 }
 .option>h3{
-    /* background-color: #112B3C; */
     color: #112B3C;
     padding: 4px;
     font-size: 18px;
@@ -301,9 +316,9 @@ nav{
 
 /* REPAIRS */
 .repairs-cntr{
-    margin: 80px 0;
+    margin: 96px 0;
     height: 300px;
-    background-color:#112B3C;
+    background-color:#205375cc;
     color:#ffffff;
 }
 
@@ -331,6 +346,7 @@ nav{
 /* FOOTER */
 footer{
     background-color:#112B3C;
+    border-top: 4px solid #205375;
 }
 .footer-cntr{
     column-gap: 128px;
@@ -360,6 +376,7 @@ footer{
 }
 .footer-item>a{
     font-style: italic;
+    font-size: 14px;
 }
 .pay-logo>i{
     font-size: 36px;
@@ -382,3 +399,4 @@ footer>p{
     color:#ffffff;
     letter-spacing: 2px;
 }
+

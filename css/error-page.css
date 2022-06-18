@@ -1,0 +1,26 @@
+
+.error-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 20px auto;
+}
+.error-page-container img{
+    width: 240px;
+    object-fit: contain;
+    margin: 40px 0;
+}
+.error-page-container p{
+    text-align: center;
+    line-height: 18px;
+}
+.error-page-container a{
+    background-color:#112B3C;
+    padding: 8px;
+    width: 240px;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+    transition-duration: 0.2s;
+}
