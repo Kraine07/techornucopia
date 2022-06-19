@@ -114,6 +114,10 @@ nav{
 .nav-upper i{
     color:#112B3C;
     align-self: flex-end;
+    font-size: 24px;
+}
+.nav-upper i:hover{
+    color:#205375;
 }
 .menu{
     height: 50px;
